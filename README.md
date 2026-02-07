@@ -2,8 +2,7 @@
 
 This project aims to build a **deep learning–based image classification system** to identify plant diseases from leaf images.
 
-🚧 **Project Status:** In Progress  
-(Currently setting up project structure and environment)
+✅ Project Status: Working Model Implemented
 
 ---
 
@@ -58,3 +57,23 @@ The goal of this project is to:
 
 This repository is under active development.  
 Details, results, and implementation will be updated progressively.
+
+
+## 🧠 Trained Model
+
+A trained CNN model is included in this repository:
+
+
+- File size: ~16 MB  
+- Framework: TensorFlow / Keras  
+- Input shape: 128 × 128 × 3  
+- Output classes: 38 plant disease categories
+## ▶️ Load Pre-trained Model
+
+```python
+import tensorflow as tf
+
+model = tf.keras.models.load_model(
+    "models/plant_disease_cnn.keras"
+)
+
